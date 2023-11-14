@@ -18,11 +18,15 @@ const connect = function () {
   // register a "connect" handler and message the player to see "sucessfully connected to game server"
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
+    conn.write("Name: CDS")
   });
 
-  conn.on("connect", () => {
-    conn.write("Name: CDS")
-    
+  return conn;
+};
+
+module.exports = { connect };
+
+//extra goodies
     /* move the snake upon connecting
     setTimeout(() => {
       conn.write("Move: up");
@@ -32,12 +36,3 @@ const connect = function () {
       conn.write("Move: left");
     }, 1000);
     */
-  });
-
-  return conn;
-};
-
-console.log("Connecting ...");
-connect();
-
-module.exports = { connect };
