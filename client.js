@@ -15,6 +15,15 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
+  // register a "connect" handler and message the player to see "sucessfully connected to game server"
+  conn.on("connection", () => {
+    console.log("Successfully connected to game server");
+  });
+
+  conn.on("connect", () => {
+    conn.write("Name: CDS")
+  })
+
   return conn;
 };
 
