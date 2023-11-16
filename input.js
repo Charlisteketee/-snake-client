@@ -19,7 +19,7 @@ const setupInput = (conn) => {
 
 // check if the received key is the Ctrl+C combination (\u0003):
 // If it is, terminate the game using process.exit()
-const handleUserInput = function (key) {
+const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
   } else if (key === 'w') {
