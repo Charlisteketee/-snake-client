@@ -8,8 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot of the snek game live in action"](\\wsl.localhost\LHL\home\labber\snake-client\image)
-!["screenshot description"](#)
+!["screenshot of the snek game live in action"](/image.png)
 
 
 ## Getting Started
