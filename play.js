@@ -7,5 +7,3 @@ const connection = connect();
 
 // pass the connection object to setUpInput
 setupInput(connection);
-
-module.exports = { setupInput };

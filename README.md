@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot of the snek game live in action"](/image.png)
+!["screenshot of the snek game live in action"](./assets/image.png)
 
 
 ## Getting Started
